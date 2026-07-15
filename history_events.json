@@ -1,0 +1,2180 @@
+[
+  {
+    "type": "miracle",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-11T22:25:57.728000+00:00",
+    "favorability": 18
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-12T00:30:29.741000+00:00",
+    "favorability": 26,
+    "consecutive_days": 3,
+    "fortune": "吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 748662737445585067,
+    "ts": "2026-06-12T01:34:50.336000+00:00",
+    "favorability": 17
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 748662737445585067,
+    "ts": "2026-06-12T01:35:22.354000+00:00",
+    "favorability": 32,
+    "consecutive_days": 1,
+    "fortune": "大吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-12T02:53:16.503000+00:00",
+    "favorability": 60
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-12T02:53:48.845000+00:00",
+    "favorability": 75,
+    "consecutive_days": 3,
+    "fortune": "大吉"
+  },
+  {
+    "type": "offering",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-12T12:07:34.808000+00:00",
+    "favorability": 31,
+    "total_offerings": 90
+  },
+  {
+    "type": "profile",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-12T12:08:04.793000+00:00",
+    "username": "ねのーん",
+    "favorability": null,
+    "consecutive_days": null,
+    "total_omikuji": null,
+    "total_offerings": null
+  },
+  {
+    "type": "offering",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-12T12:11:58.938000+00:00",
+    "favorability": 80,
+    "total_offerings": 20
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-13T00:31:55.768000+00:00",
+    "favorability": 36,
+    "consecutive_days": 4,
+    "fortune": "小吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-13T00:32:06.617000+00:00",
+    "favorability": 38
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-13T00:39:49.101000+00:00",
+    "favorability": 90,
+    "consecutive_days": 4,
+    "fortune": "中吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-13T00:40:23.333000+00:00",
+    "favorability": 92
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-14T00:40:45.488000+00:00",
+    "favorability": 94,
+    "consecutive_days": 5,
+    "fortune": "凶"
+  },
+  {
+    "type": "miracle",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-14T00:41:55.690000+00:00",
+    "favorability": 96
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-14T00:43:23.987000+00:00",
+    "favorability": 53,
+    "consecutive_days": 5,
+    "fortune": "大吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-14T00:44:01.691000+00:00",
+    "favorability": 55
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-15T02:32:57.598000+00:00",
+    "favorability": 57,
+    "consecutive_days": 6,
+    "fortune": "凶"
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-15T02:42:08.663000+00:00",
+    "favorability": 106,
+    "consecutive_days": 6,
+    "fortune": "中吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-15T02:42:43.952000+00:00",
+    "favorability": 156
+  },
+  {
+    "type": "miracle",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-15T02:45:24.665000+00:00",
+    "favorability": 59
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-16T02:24:30.530000+00:00",
+    "favorability": 171,
+    "consecutive_days": 7,
+    "fortune": "大吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-16T02:25:17.665000+00:00",
+    "favorability": 173
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-16T02:45:31.471000+00:00",
+    "favorability": 62,
+    "consecutive_days": 7,
+    "fortune": "末吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-16T02:45:40.818000+00:00",
+    "favorability": 64
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-17T00:05:20.743000+00:00",
+    "favorability": 84,
+    "consecutive_days": 8,
+    "fortune": "常識無視"
+  },
+  {
+    "type": "miracle",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-17T00:05:38.392000+00:00",
+    "favorability": 86
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-17T00:08:35.747000+00:00",
+    "favorability": 183,
+    "consecutive_days": 8,
+    "fortune": "中吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-17T00:09:09.431000+00:00",
+    "favorability": 185
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-18T00:24:46.828000+00:00",
+    "favorability": 200,
+    "consecutive_days": 9,
+    "fortune": "大吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-18T00:25:19.141000+00:00",
+    "favorability": 250
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-18T01:37:28.460000+00:00",
+    "favorability": 96,
+    "consecutive_days": 9,
+    "fortune": "中吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-18T01:37:35.998000+00:00",
+    "favorability": 146
+  },
+  {
+    "type": "profile",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-18T01:38:36.344000+00:00",
+    "username": "ねのーん",
+    "favorability": null,
+    "consecutive_days": null,
+    "total_omikuji": null,
+    "total_offerings": null
+  },
+  {
+    "type": "profile",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-18T01:39:45.731000+00:00",
+    "username": "なおけん",
+    "favorability": null,
+    "consecutive_days": null,
+    "total_omikuji": null,
+    "total_offerings": null
+  },
+  {
+    "type": "offering",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-18T01:41:10.281000+00:00",
+    "favorability": 255,
+    "total_offerings": 100
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-19T01:26:43.017000+00:00",
+    "favorability": 154,
+    "consecutive_days": 10,
+    "fortune": "吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-19T01:26:59.417000+00:00",
+    "favorability": 156
+  },
+  {
+    "type": "offering",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-19T01:27:35.855000+00:00",
+    "favorability": 157,
+    "total_offerings": 95
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-19T02:50:30.977000+00:00",
+    "favorability": 258,
+    "consecutive_days": 10,
+    "fortune": "末吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-19T02:52:14.531000+00:00",
+    "favorability": 260
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 748662737445585067,
+    "ts": "2026-06-19T03:49:06.215000+00:00",
+    "favorability": 35,
+    "consecutive_days": 1,
+    "fortune": "末吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 748662737445585067,
+    "ts": "2026-06-19T03:49:38.973000+00:00",
+    "favorability": 37
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 313292199066599425,
+    "ts": "2026-06-19T06:14:11.759000+00:00",
+    "favorability": 3,
+    "consecutive_days": 1,
+    "fortune": "末吉"
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-20T00:19:14.193000+00:00",
+    "favorability": 275,
+    "consecutive_days": 11,
+    "fortune": "大吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-20T00:19:30.141000+00:00",
+    "favorability": 277
+  },
+  {
+    "type": "offering",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-20T00:20:47.827000+00:00",
+    "favorability": 289,
+    "total_offerings": 200
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 313292199066599425,
+    "ts": "2026-06-20T02:11:22.087000+00:00",
+    "favorability": 6,
+    "consecutive_days": 2,
+    "fortune": "末吉"
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-20T03:17:04.980000+00:00",
+    "favorability": 165,
+    "consecutive_days": 11,
+    "fortune": "吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-20T03:17:16.543000+00:00",
+    "favorability": 167
+  },
+  {
+    "type": "offering",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-20T03:17:31.429000+00:00",
+    "favorability": 179,
+    "total_offerings": 195
+  },
+  {
+    "type": "offering",
+    "user_id": 748662737445585067,
+    "ts": "2026-06-20T04:54:01.318000+00:00",
+    "favorability": 49,
+    "total_offerings": 100
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-21T03:12:50.396000+00:00",
+    "favorability": 297,
+    "consecutive_days": 12,
+    "fortune": "吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-21T03:13:08.344000+00:00",
+    "favorability": 299
+  },
+  {
+    "type": "profile",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-21T03:13:35.756000+00:00",
+    "username": "なおけん",
+    "favorability": null,
+    "consecutive_days": null,
+    "total_omikuji": null,
+    "total_offerings": null
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-21T03:17:48.131000+00:00",
+    "favorability": 189,
+    "consecutive_days": 12,
+    "fortune": "中吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-21T03:17:59.526000+00:00",
+    "favorability": 191
+  },
+  {
+    "type": "offering",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-21T03:18:29.860000+00:00",
+    "favorability": 192,
+    "total_offerings": 200
+  },
+  {
+    "type": "profile",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-21T03:18:58.601000+00:00",
+    "username": "ねのーん",
+    "favorability": null,
+    "consecutive_days": null,
+    "total_omikuji": null,
+    "total_offerings": null
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 313292199066599425,
+    "ts": "2026-06-21T03:34:58.480000+00:00",
+    "favorability": 26,
+    "consecutive_days": 3,
+    "fortune": "常識無視"
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-22T00:03:58.734000+00:00",
+    "favorability": 309,
+    "consecutive_days": 13,
+    "fortune": "中吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-22T00:04:14.103000+00:00",
+    "favorability": 311
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-22T00:07:08.676000+00:00",
+    "favorability": 212,
+    "consecutive_days": 13,
+    "fortune": "常識無視"
+  },
+  {
+    "type": "miracle",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-22T00:07:17.888000+00:00",
+    "favorability": 262
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 313292199066599425,
+    "ts": "2026-06-22T01:20:02.298000+00:00",
+    "favorability": 29,
+    "consecutive_days": 4,
+    "fortune": "末吉"
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-23T00:46:52.604000+00:00",
+    "favorability": 319,
+    "consecutive_days": 14,
+    "fortune": "吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-23T00:47:05.095000+00:00",
+    "favorability": 321
+  },
+  {
+    "type": "offering",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-23T00:47:47.416000+00:00",
+    "favorability": 333,
+    "total_offerings": 300
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-23T01:02:00.052000+00:00",
+    "favorability": 265,
+    "consecutive_days": 14,
+    "fortune": "末吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-23T01:02:05.431000+00:00",
+    "favorability": 267
+  },
+  {
+    "type": "offering",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-23T01:02:14.940000+00:00",
+    "favorability": 268,
+    "total_offerings": 205
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 313292199066599425,
+    "ts": "2026-06-23T04:03:03.692000+00:00",
+    "favorability": 34,
+    "consecutive_days": 5,
+    "fortune": "小吉"
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-24T00:02:36.530000+00:00",
+    "favorability": 273,
+    "consecutive_days": 15,
+    "fortune": "小吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-24T00:02:47.210000+00:00",
+    "favorability": 275
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-24T00:18:30.524000+00:00",
+    "favorability": 343,
+    "consecutive_days": 15,
+    "fortune": "中吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-24T00:18:41.325000+00:00",
+    "favorability": 393
+  },
+  {
+    "type": "offering",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-24T00:19:17.514000+00:00",
+    "favorability": 398,
+    "total_offerings": 310
+  },
+  {
+    "type": "profile",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-24T00:19:44.012000+00:00",
+    "username": "なおけん",
+    "favorability": null,
+    "consecutive_days": null,
+    "total_omikuji": null,
+    "total_offerings": null
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-25T01:11:39.833000+00:00",
+    "favorability": 285,
+    "consecutive_days": 16,
+    "fortune": "中吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-25T01:11:44.860000+00:00",
+    "favorability": 287
+  },
+  {
+    "type": "offering",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-25T01:11:52.561000+00:00",
+    "favorability": 288,
+    "total_offerings": 210
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 313292199066599425,
+    "ts": "2026-06-25T02:26:23.560000+00:00",
+    "favorability": 44,
+    "consecutive_days": 1,
+    "fortune": "中吉"
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-25T02:54:43.976000+00:00",
+    "favorability": 413,
+    "consecutive_days": 16,
+    "fortune": "大吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-25T02:55:09.425000+00:00",
+    "favorability": 415
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-26T00:16:42.976000+00:00",
+    "favorability": 417,
+    "consecutive_days": 17,
+    "fortune": "凶"
+  },
+  {
+    "type": "miracle",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-26T00:17:02.287000+00:00",
+    "favorability": 419
+  },
+  {
+    "type": "offering",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-26T00:17:23.702000+00:00",
+    "favorability": 431,
+    "total_offerings": 410
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-26T00:39:53.648000+00:00",
+    "favorability": 293,
+    "consecutive_days": 17,
+    "fortune": "小吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-26T00:40:05.184000+00:00",
+    "favorability": 343
+  },
+  {
+    "type": "offering",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-26T00:40:22.237000+00:00",
+    "favorability": 344,
+    "total_offerings": 215
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 313292199066599425,
+    "ts": "2026-06-26T02:06:07.642000+00:00",
+    "favorability": 49,
+    "consecutive_days": 2,
+    "fortune": "小吉"
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-27T00:52:50.232000+00:00",
+    "favorability": 349,
+    "consecutive_days": 18,
+    "fortune": "小吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-27T00:52:59.469000+00:00",
+    "favorability": 351
+  },
+  {
+    "type": "offering",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-27T00:53:11.022000+00:00",
+    "favorability": 352,
+    "total_offerings": 220
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-27T00:59:23.913000+00:00",
+    "favorability": 451,
+    "consecutive_days": 18,
+    "fortune": "常識無視"
+  },
+  {
+    "type": "miracle",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-27T00:59:40.398000+00:00",
+    "favorability": 501
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 313292199066599425,
+    "ts": "2026-06-27T02:37:09.521000+00:00",
+    "favorability": 54,
+    "consecutive_days": 3,
+    "fortune": "小吉"
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-28T00:55:07.661000+00:00",
+    "favorability": 360,
+    "consecutive_days": 19,
+    "fortune": "吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-28T00:55:12.476000+00:00",
+    "favorability": 362
+  },
+  {
+    "type": "offering",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-28T00:55:17.155000+00:00",
+    "favorability": 363,
+    "total_offerings": 225
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 313292199066599425,
+    "ts": "2026-06-28T01:07:43.722000+00:00",
+    "favorability": 62,
+    "consecutive_days": 4,
+    "fortune": "吉"
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-28T03:06:56.898000+00:00",
+    "favorability": 503,
+    "consecutive_days": 19,
+    "fortune": "凶"
+  },
+  {
+    "type": "miracle",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-28T03:07:13.538000+00:00",
+    "favorability": 553
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 313292199066599425,
+    "ts": "2026-06-29T01:01:24.622000+00:00",
+    "favorability": 65,
+    "consecutive_days": 5,
+    "fortune": "末吉"
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-29T01:21:15.326000+00:00",
+    "favorability": 558,
+    "consecutive_days": 20,
+    "fortune": "小吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-29T01:21:26.285000+00:00",
+    "favorability": 560
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-29T02:46:04.629000+00:00",
+    "favorability": 383,
+    "consecutive_days": 20,
+    "fortune": "常識無視"
+  },
+  {
+    "type": "miracle",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-29T02:46:15.925000+00:00",
+    "favorability": 433
+  },
+  {
+    "type": "offering",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-29T02:46:27.592000+00:00",
+    "favorability": 434,
+    "total_offerings": 230
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 596317004143788054,
+    "ts": "2026-06-29T10:33:58.650000+00:00",
+    "favorability": 3,
+    "consecutive_days": 1,
+    "fortune": "末吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 596317004143788054,
+    "ts": "2026-06-29T10:34:02.524000+00:00",
+    "favorability": 5
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-30T00:24:25.009000+00:00",
+    "favorability": 565,
+    "consecutive_days": 21,
+    "fortune": "小吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-30T00:24:39.260000+00:00",
+    "favorability": 615
+  },
+  {
+    "type": "offering",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-30T00:25:27.197000+00:00",
+    "favorability": 640,
+    "total_offerings": 1410
+  },
+  {
+    "type": "profile",
+    "user_id": 308944739661512704,
+    "ts": "2026-06-30T00:26:04.312000+00:00",
+    "username": "なおけん",
+    "favorability": null,
+    "consecutive_days": null,
+    "total_omikuji": null,
+    "total_offerings": null
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-30T01:25:32.009000+00:00",
+    "favorability": 439,
+    "consecutive_days": 21,
+    "fortune": "小吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-30T01:25:37.283000+00:00",
+    "favorability": 441
+  },
+  {
+    "type": "offering",
+    "user_id": 302303627052056576,
+    "ts": "2026-06-30T01:25:47.235000+00:00",
+    "favorability": 453,
+    "total_offerings": 330
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 313292199066599425,
+    "ts": "2026-06-30T02:12:59.514000+00:00",
+    "favorability": 73,
+    "consecutive_days": 6,
+    "fortune": "吉"
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 596317004143788054,
+    "ts": "2026-06-30T06:17:19.794000+00:00",
+    "favorability": 35,
+    "consecutive_days": 2,
+    "fortune": "奇跡"
+  },
+  {
+    "type": "miracle",
+    "user_id": 596317004143788054,
+    "ts": "2026-06-30T06:17:24.620000+00:00",
+    "favorability": 85
+  },
+  {
+    "type": "offering",
+    "user_id": 596317004143788054,
+    "ts": "2026-06-30T06:18:01.597000+00:00",
+    "favorability": 90,
+    "total_offerings": 50
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 308944739661512704,
+    "ts": "2026-07-01T00:31:40.098000+00:00",
+    "favorability": 645,
+    "consecutive_days": 22,
+    "fortune": "大凶"
+  },
+  {
+    "type": "miracle",
+    "user_id": 308944739661512704,
+    "ts": "2026-07-01T00:31:53.259000+00:00",
+    "favorability": 695
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-01T00:33:40.201000+00:00",
+    "favorability": 468,
+    "consecutive_days": 22,
+    "fortune": "大吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-01T00:33:45.793000+00:00",
+    "favorability": 470
+  },
+  {
+    "type": "offering",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-01T00:33:53+00:00",
+    "favorability": 482,
+    "total_offerings": 430
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 596317004143788054,
+    "ts": "2026-07-01T08:02:30.097000+00:00",
+    "favorability": 95,
+    "consecutive_days": 3,
+    "fortune": "小吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 596317004143788054,
+    "ts": "2026-07-01T08:02:32.615000+00:00",
+    "favorability": 97
+  },
+  {
+    "type": "offering",
+    "user_id": 596317004143788054,
+    "ts": "2026-07-01T08:03:22.867000+00:00",
+    "favorability": 122,
+    "total_offerings": 1050
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 308944739661512704,
+    "ts": "2026-07-02T00:55:02.365000+00:00",
+    "favorability": 698,
+    "consecutive_days": 23,
+    "fortune": "末吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 308944739661512704,
+    "ts": "2026-07-02T00:55:20.534000+00:00",
+    "favorability": 748
+  },
+  {
+    "type": "offering",
+    "user_id": 308944739661512704,
+    "ts": "2026-07-02T00:55:46.676000+00:00",
+    "favorability": 760,
+    "total_offerings": 1510
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-02T01:00:40.344000+00:00",
+    "favorability": 490,
+    "consecutive_days": 23,
+    "fortune": "吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-02T01:00:45.585000+00:00",
+    "favorability": 492
+  },
+  {
+    "type": "offering",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-02T01:00:54.074000+00:00",
+    "favorability": 504,
+    "total_offerings": 530
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 313292199066599425,
+    "ts": "2026-07-02T01:10:27.397000+00:00",
+    "favorability": 88,
+    "consecutive_days": 1,
+    "fortune": "大吉"
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 596317004143788054,
+    "ts": "2026-07-02T06:34:07.704000+00:00",
+    "favorability": 125,
+    "consecutive_days": 4,
+    "fortune": "末吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 596317004143788054,
+    "ts": "2026-07-02T06:34:10.324000+00:00",
+    "favorability": 127
+  },
+  {
+    "type": "offering",
+    "user_id": 596317004143788054,
+    "ts": "2026-07-02T06:34:14.511000+00:00",
+    "favorability": 128,
+    "total_offerings": 1055
+  },
+  {
+    "type": "miracle",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-02T09:09:02.841000+00:00",
+    "favorability": 2
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-02T09:09:30.266000+00:00",
+    "favorability": 5,
+    "consecutive_days": 1,
+    "fortune": "末吉"
+  },
+  {
+    "type": "offering",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-02T09:10:10.195000+00:00",
+    "favorability": 10,
+    "total_offerings": 50
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 308944739661512704,
+    "ts": "2026-07-03T00:09:01.857000+00:00",
+    "favorability": 768,
+    "consecutive_days": 24,
+    "fortune": "吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 308944739661512704,
+    "ts": "2026-07-03T00:09:14.583000+00:00",
+    "favorability": 770
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-03T00:14:56.354000+00:00",
+    "favorability": 506,
+    "consecutive_days": 24,
+    "fortune": "凶"
+  },
+  {
+    "type": "miracle",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-03T00:15:03.940000+00:00",
+    "favorability": 556
+  },
+  {
+    "type": "offering",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-03T00:15:19.563000+00:00",
+    "favorability": 557,
+    "total_offerings": 535
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 313292199066599425,
+    "ts": "2026-07-03T03:52:48.270000+00:00",
+    "favorability": 108,
+    "consecutive_days": 2,
+    "fortune": "常識無視"
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 596317004143788054,
+    "ts": "2026-07-03T03:57:10.004000+00:00",
+    "favorability": 130,
+    "consecutive_days": 5,
+    "fortune": "凶"
+  },
+  {
+    "type": "miracle",
+    "user_id": 596317004143788054,
+    "ts": "2026-07-03T03:57:16.268000+00:00",
+    "favorability": 132
+  },
+  {
+    "type": "offering",
+    "user_id": 596317004143788054,
+    "ts": "2026-07-03T03:57:31.430000+00:00",
+    "favorability": 137,
+    "total_offerings": 1105
+  },
+  {
+    "type": "miracle",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-03T04:30:09.498000+00:00",
+    "favorability": 60
+  },
+  {
+    "type": "offering",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-03T04:30:36.085000+00:00",
+    "favorability": 72,
+    "total_offerings": 150
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-03T04:30:56.982000+00:00",
+    "favorability": 80,
+    "consecutive_days": 2,
+    "fortune": "吉"
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-04T00:24:24.464000+00:00",
+    "favorability": 565,
+    "consecutive_days": 25,
+    "fortune": "吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-04T00:24:36.766000+00:00",
+    "favorability": 567
+  },
+  {
+    "type": "offering",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-04T00:24:42.743000+00:00",
+    "favorability": 579,
+    "total_offerings": 635
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 308944739661512704,
+    "ts": "2026-07-04T00:29:31.242000+00:00",
+    "favorability": 785,
+    "consecutive_days": 25,
+    "fortune": "大吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 308944739661512704,
+    "ts": "2026-07-04T00:29:41.534000+00:00",
+    "favorability": 835
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 313292199066599425,
+    "ts": "2026-07-04T00:42:51.226000+00:00",
+    "favorability": 116,
+    "consecutive_days": 3,
+    "fortune": "吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-04T02:02:21.564000+00:00",
+    "favorability": 130
+  },
+  {
+    "type": "offering",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-04T02:02:41.721000+00:00",
+    "favorability": 142,
+    "total_offerings": 650
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-04T02:03:00.315000+00:00",
+    "favorability": 152,
+    "consecutive_days": 3,
+    "fortune": "中吉"
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 308944739661512704,
+    "ts": "2026-07-05T00:11:38.119000+00:00",
+    "favorability": 850,
+    "consecutive_days": 26,
+    "fortune": "大吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 308944739661512704,
+    "ts": "2026-07-05T00:11:51.464000+00:00",
+    "favorability": 852
+  },
+  {
+    "type": "offering",
+    "user_id": 308944739661512704,
+    "ts": "2026-07-05T00:12:49.292000+00:00",
+    "favorability": 864,
+    "total_offerings": 1610
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-05T00:17:56.541000+00:00",
+    "favorability": 582,
+    "consecutive_days": 26,
+    "fortune": "末吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-05T00:18:11.141000+00:00",
+    "favorability": 632
+  },
+  {
+    "type": "offering",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-05T00:18:23.108000+00:00",
+    "favorability": 644,
+    "total_offerings": 735
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 313292199066599425,
+    "ts": "2026-07-05T01:16:46.644000+00:00",
+    "favorability": 121,
+    "consecutive_days": 4,
+    "fortune": "小吉"
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 562902341079269378,
+    "ts": "2026-07-05T01:17:13.391000+00:00",
+    "favorability": 20,
+    "consecutive_days": 1,
+    "fortune": "中吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-05T03:05:32.657000+00:00",
+    "favorability": 154
+  },
+  {
+    "type": "offering",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-05T03:05:42.686000+00:00",
+    "favorability": 155,
+    "total_offerings": 655
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-05T03:05:55.338000+00:00",
+    "favorability": 175,
+    "consecutive_days": 4,
+    "fortune": "常識無視"
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-06T01:28:51.206000+00:00",
+    "favorability": 649,
+    "consecutive_days": 27,
+    "fortune": "小吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-06T01:29:02.182000+00:00",
+    "favorability": 699
+  },
+  {
+    "type": "offering",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-06T01:29:19.782000+00:00",
+    "favorability": 711,
+    "total_offerings": 835
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 308944739661512704,
+    "ts": "2026-07-06T01:39:49.693000+00:00",
+    "favorability": 872,
+    "consecutive_days": 27,
+    "fortune": "吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 308944739661512704,
+    "ts": "2026-07-06T01:39:59.540000+00:00",
+    "favorability": 922
+  },
+  {
+    "type": "offering",
+    "user_id": 308944739661512704,
+    "ts": "2026-07-06T01:40:25.932000+00:00",
+    "favorability": 927,
+    "total_offerings": 1660
+  },
+  {
+    "type": "miracle",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-06T04:40:17.964000+00:00",
+    "favorability": 177
+  },
+  {
+    "type": "offering",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-06T04:40:27.537000+00:00",
+    "favorability": 178,
+    "total_offerings": 660
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-06T04:40:34.038000+00:00",
+    "favorability": 186,
+    "consecutive_days": 5,
+    "fortune": "吉"
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 596317004143788054,
+    "ts": "2026-07-06T09:57:31.226000+00:00",
+    "favorability": 142,
+    "consecutive_days": 1,
+    "fortune": "大凶"
+  },
+  {
+    "type": "miracle",
+    "user_id": 596317004143788054,
+    "ts": "2026-07-06T09:57:40.631000+00:00",
+    "favorability": 144
+  },
+  {
+    "type": "offering",
+    "user_id": 596317004143788054,
+    "ts": "2026-07-06T09:57:47.868000+00:00",
+    "favorability": 156,
+    "total_offerings": 1205
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 302693501110583297,
+    "ts": "2026-07-06T11:53:30.620000+00:00",
+    "favorability": 5,
+    "consecutive_days": 1,
+    "fortune": "小吉"
+  },
+  {
+    "type": "offering",
+    "user_id": 302693501110583297,
+    "ts": "2026-07-06T11:54:41.517000+00:00",
+    "favorability": 30,
+    "total_offerings": 1000
+  },
+  {
+    "type": "miracle",
+    "user_id": 302693501110583297,
+    "ts": "2026-07-06T11:55:06.997000+00:00",
+    "favorability": 32
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-07T00:15:04.634000+00:00",
+    "favorability": 716,
+    "consecutive_days": 28,
+    "fortune": "小吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-07T00:15:11.754000+00:00",
+    "favorability": 766
+  },
+  {
+    "type": "offering",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-07T00:15:24.520000+00:00",
+    "favorability": 778,
+    "total_offerings": 935
+  },
+  {
+    "type": "profile",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-07T00:15:41.458000+00:00",
+    "username": "ねのーん",
+    "favorability": null,
+    "consecutive_days": null,
+    "total_omikuji": null,
+    "total_offerings": null
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 308944739661512704,
+    "ts": "2026-07-07T00:31:22.237000+00:00",
+    "favorability": 957,
+    "consecutive_days": 28,
+    "fortune": "奇跡"
+  },
+  {
+    "type": "miracle",
+    "user_id": 308944739661512704,
+    "ts": "2026-07-07T00:31:33.492000+00:00",
+    "favorability": 1007
+  },
+  {
+    "type": "profile",
+    "user_id": 308944739661512704,
+    "ts": "2026-07-07T00:31:58.200000+00:00",
+    "username": "なおけん",
+    "favorability": null,
+    "consecutive_days": null,
+    "total_omikuji": null,
+    "total_offerings": null
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 313292199066599425,
+    "ts": "2026-07-07T01:05:52.621000+00:00",
+    "favorability": 129,
+    "consecutive_days": 1,
+    "fortune": "吉"
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 302693501110583297,
+    "ts": "2026-07-07T02:37:17.357000+00:00",
+    "favorability": 40,
+    "consecutive_days": 2,
+    "fortune": "吉"
+  },
+  {
+    "type": "offering",
+    "user_id": 302693501110583297,
+    "ts": "2026-07-07T02:38:26.297000+00:00",
+    "favorability": 41,
+    "total_offerings": 1005
+  },
+  {
+    "type": "miracle",
+    "user_id": 302693501110583297,
+    "ts": "2026-07-07T02:38:58.784000+00:00",
+    "favorability": 43
+  },
+  {
+    "type": "miracle",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-07T04:42:23.129000+00:00",
+    "favorability": 188
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-07T04:42:35.562000+00:00",
+    "favorability": 196,
+    "consecutive_days": 6,
+    "fortune": "吉"
+  },
+  {
+    "type": "offering",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-07T04:42:46.478000+00:00",
+    "favorability": 208,
+    "total_offerings": 1160
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 308944739661512704,
+    "ts": "2026-07-08T02:17:45.341000+00:00",
+    "favorability": 1017,
+    "consecutive_days": 29,
+    "fortune": "中吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 308944739661512704,
+    "ts": "2026-07-08T02:18:05.881000+00:00",
+    "favorability": 1067
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-08T02:47:37.312000+00:00",
+    "favorability": 788,
+    "consecutive_days": 29,
+    "fortune": "中吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-08T02:47:44.537000+00:00",
+    "favorability": 790
+  },
+  {
+    "type": "offering",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-08T02:47:55.942000+00:00",
+    "favorability": 791,
+    "total_offerings": 940
+  },
+  {
+    "type": "offering",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-08T03:27:39.488000+00:00",
+    "favorability": 233,
+    "total_offerings": 6160
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-08T03:27:59.799000+00:00",
+    "favorability": 235,
+    "consecutive_days": 7,
+    "fortune": "凶"
+  },
+  {
+    "type": "miracle",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-08T03:28:17.711000+00:00",
+    "favorability": 237
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 596317004143788054,
+    "ts": "2026-07-08T04:04:57.107000+00:00",
+    "favorability": 159,
+    "consecutive_days": 1,
+    "fortune": "末吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 596317004143788054,
+    "ts": "2026-07-08T04:04:59.717000+00:00",
+    "favorability": 161
+  },
+  {
+    "type": "offering",
+    "user_id": 596317004143788054,
+    "ts": "2026-07-08T04:05:04.598000+00:00",
+    "favorability": 173,
+    "total_offerings": 1305
+  },
+  {
+    "type": "offering",
+    "user_id": 748662737445585067,
+    "ts": "2026-07-08T08:11:05.197000+00:00",
+    "favorability": 74,
+    "total_offerings": 1000100
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 748662737445585067,
+    "ts": "2026-07-08T08:12:02.174000+00:00",
+    "favorability": 76,
+    "consecutive_days": 1,
+    "fortune": "凶"
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-09T01:48:56.352000+00:00",
+    "favorability": 801,
+    "consecutive_days": 30,
+    "fortune": "中吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-09T01:49:04.711000+00:00",
+    "favorability": 851
+  },
+  {
+    "type": "offering",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-09T01:49:18.412000+00:00",
+    "favorability": 863,
+    "total_offerings": 1040
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-09T01:52:07.873000+00:00",
+    "favorability": 240,
+    "consecutive_days": 8,
+    "fortune": "末吉"
+  },
+  {
+    "type": "offering",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-09T01:52:27.506000+00:00",
+    "favorability": 252,
+    "total_offerings": 6310
+  },
+  {
+    "type": "miracle",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-09T01:52:38.674000+00:00",
+    "favorability": 302
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 308944739661512704,
+    "ts": "2026-07-09T01:55:28.849000+00:00",
+    "favorability": 1097,
+    "consecutive_days": 30,
+    "fortune": "奇跡"
+  },
+  {
+    "type": "miracle",
+    "user_id": 308944739661512704,
+    "ts": "2026-07-09T01:55:40.398000+00:00",
+    "favorability": 1147
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 313292199066599425,
+    "ts": "2026-07-09T02:33:49.256000+00:00",
+    "favorability": 159,
+    "consecutive_days": 1,
+    "fortune": "奇跡"
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 823871940825317377,
+    "ts": "2026-07-09T03:33:39.187000+00:00",
+    "favorability": 5,
+    "consecutive_days": 1,
+    "fortune": "小吉"
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 308944739661512704,
+    "ts": "2026-07-10T01:11:05.729000+00:00",
+    "favorability": 1150,
+    "consecutive_days": 31,
+    "fortune": "末吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 308944739661512704,
+    "ts": "2026-07-10T01:11:19.550000+00:00",
+    "favorability": 1200
+  },
+  {
+    "type": "offering",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-10T01:53:48.837000+00:00",
+    "favorability": 307,
+    "total_offerings": 6360
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-10T01:54:10.404000+00:00",
+    "favorability": 309,
+    "consecutive_days": 9,
+    "fortune": "凶"
+  },
+  {
+    "type": "miracle",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-10T01:54:22.213000+00:00",
+    "favorability": 311
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 823871940825317377,
+    "ts": "2026-07-10T03:01:53.721000+00:00",
+    "favorability": 20,
+    "consecutive_days": 2,
+    "fortune": "大吉"
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 610359790392311810,
+    "ts": "2026-07-10T05:59:09.598000+00:00",
+    "favorability": 8,
+    "consecutive_days": 1,
+    "fortune": "吉"
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 596317004143788054,
+    "ts": "2026-07-10T07:33:55.801000+00:00",
+    "favorability": 178,
+    "consecutive_days": 1,
+    "fortune": "小吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 596317004143788054,
+    "ts": "2026-07-10T07:33:57.570000+00:00",
+    "favorability": 180
+  },
+  {
+    "type": "offering",
+    "user_id": 596317004143788054,
+    "ts": "2026-07-10T07:34:01.449000+00:00",
+    "favorability": 192,
+    "total_offerings": 1405
+  },
+  {
+    "type": "miracle",
+    "user_id": 823871940825317377,
+    "ts": "2026-07-10T07:56:23.610000+00:00",
+    "favorability": 22
+  },
+  {
+    "type": "miracle",
+    "user_id": 748662737445585067,
+    "ts": "2026-07-10T09:32:52.428000+00:00",
+    "favorability": 78
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-10T11:43:07.067000+00:00",
+    "favorability": 871,
+    "consecutive_days": 31,
+    "fortune": "吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-10T11:43:11.611000+00:00",
+    "favorability": 921
+  },
+  {
+    "type": "offering",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-10T11:43:16.651000+00:00",
+    "favorability": 933,
+    "total_offerings": 1140
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-11T01:52:58.713000+00:00",
+    "favorability": 326,
+    "consecutive_days": 10,
+    "fortune": "大吉"
+  },
+  {
+    "type": "offering",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-11T01:53:51.613000+00:00",
+    "favorability": 338,
+    "total_offerings": 6860
+  },
+  {
+    "type": "miracle",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-11T01:54:06.246000+00:00",
+    "favorability": 340
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 308944739661512704,
+    "ts": "2026-07-11T01:54:07.896000+00:00",
+    "favorability": 1220,
+    "consecutive_days": 32,
+    "fortune": "常識無視"
+  },
+  {
+    "type": "miracle",
+    "user_id": 308944739661512704,
+    "ts": "2026-07-11T01:54:18.457000+00:00",
+    "favorability": 1270
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 610359790392311810,
+    "ts": "2026-07-11T02:06:54.804000+00:00",
+    "favorability": 13,
+    "consecutive_days": 2,
+    "fortune": "小吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 610359790392311810,
+    "ts": "2026-07-11T02:07:04.201000+00:00",
+    "favorability": 15
+  },
+  {
+    "type": "offering",
+    "user_id": 610359790392311810,
+    "ts": "2026-07-11T02:08:07.745000+00:00",
+    "favorability": 20,
+    "total_offerings": 50
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 596317004143788054,
+    "ts": "2026-07-11T04:40:38.720000+00:00",
+    "favorability": 212,
+    "consecutive_days": 2,
+    "fortune": "常識無視"
+  },
+  {
+    "type": "miracle",
+    "user_id": 596317004143788054,
+    "ts": "2026-07-11T04:40:40.888000+00:00",
+    "favorability": 214
+  },
+  {
+    "type": "offering",
+    "user_id": 596317004143788054,
+    "ts": "2026-07-11T04:40:44.230000+00:00",
+    "favorability": 226,
+    "total_offerings": 1505
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 823871940825317377,
+    "ts": "2026-07-11T05:35:58.483000+00:00",
+    "favorability": 27,
+    "consecutive_days": 3,
+    "fortune": "小吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 823871940825317377,
+    "ts": "2026-07-11T05:36:02.025000+00:00",
+    "favorability": 29
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-11T05:48:52.377000+00:00",
+    "favorability": 935,
+    "consecutive_days": 32,
+    "fortune": "凶"
+  },
+  {
+    "type": "miracle",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-11T05:49:01.841000+00:00",
+    "favorability": 985
+  },
+  {
+    "type": "offering",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-11T05:49:07.575000+00:00",
+    "favorability": 997,
+    "total_offerings": 1240
+  },
+  {
+    "type": "offering",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-12T06:57:21.375000+00:00",
+    "favorability": 352,
+    "total_offerings": 6960
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-12T06:57:28.728000+00:00",
+    "favorability": 367,
+    "consecutive_days": 11,
+    "fortune": "大吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-12T06:57:47.913000+00:00",
+    "favorability": 369
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 308944739661512704,
+    "ts": "2026-07-12T07:13:01.038000+00:00",
+    "favorability": 1280,
+    "consecutive_days": 33,
+    "fortune": "中吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 308944739661512704,
+    "ts": "2026-07-12T07:13:14.045000+00:00",
+    "favorability": 1330
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 596317004143788054,
+    "ts": "2026-07-12T12:24:22.488000+00:00",
+    "favorability": 231,
+    "consecutive_days": 3,
+    "fortune": "小吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 596317004143788054,
+    "ts": "2026-07-12T12:24:25.457000+00:00",
+    "favorability": 233
+  },
+  {
+    "type": "offering",
+    "user_id": 596317004143788054,
+    "ts": "2026-07-12T12:24:28.713000+00:00",
+    "favorability": 245,
+    "total_offerings": 1605
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 308944739661512704,
+    "ts": "2026-07-13T00:14:27.104000+00:00",
+    "favorability": 1338,
+    "consecutive_days": 34,
+    "fortune": "吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 308944739661512704,
+    "ts": "2026-07-13T00:14:37.595000+00:00",
+    "favorability": 1388
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-13T00:24:44.100000+00:00",
+    "favorability": 1002,
+    "consecutive_days": 1,
+    "fortune": "小吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-13T00:24:52.852000+00:00",
+    "favorability": 1004
+  },
+  {
+    "type": "offering",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-13T00:24:58.680000+00:00",
+    "favorability": 1016,
+    "total_offerings": 1340
+  },
+  {
+    "type": "profile",
+    "user_id": 308944739661512704,
+    "ts": "2026-07-13T01:04:10.817000+00:00",
+    "username": "なおけん",
+    "favorability": null,
+    "consecutive_days": null,
+    "total_omikuji": null,
+    "total_offerings": null
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 823871940825317377,
+    "ts": "2026-07-13T01:37:43.556000+00:00",
+    "favorability": 31,
+    "consecutive_days": 1,
+    "fortune": "凶"
+  },
+  {
+    "type": "miracle",
+    "user_id": 823871940825317377,
+    "ts": "2026-07-13T01:37:48.345000+00:00",
+    "favorability": 33
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-13T07:39:46.991000+00:00",
+    "favorability": 8,
+    "consecutive_days": 1,
+    "fortune": "吉"
+  },
+  {
+    "type": "offering",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-13T07:40:08.641000+00:00",
+    "favorability": 13,
+    "total_offerings": 50
+  },
+  {
+    "type": "miracle",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-13T07:40:19.062000+00:00",
+    "favorability": 15
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 596317004143788054,
+    "ts": "2026-07-13T07:50:39.523000+00:00",
+    "favorability": 15,
+    "consecutive_days": 1,
+    "fortune": "大吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 596317004143788054,
+    "ts": "2026-07-13T07:50:42.099000+00:00",
+    "favorability": 65
+  },
+  {
+    "type": "offering",
+    "user_id": 596317004143788054,
+    "ts": "2026-07-13T07:50:45.606000+00:00",
+    "favorability": 77,
+    "total_offerings": 100
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 308944739661512704,
+    "ts": "2026-07-14T01:39:35.885000+00:00",
+    "favorability": 8,
+    "consecutive_days": 1,
+    "fortune": "吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 308944739661512704,
+    "ts": "2026-07-14T01:39:46.412000+00:00",
+    "favorability": 10
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-14T02:04:08.473000+00:00",
+    "favorability": 2,
+    "consecutive_days": 1,
+    "fortune": "凶"
+  },
+  {
+    "type": "miracle",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-14T02:04:16.885000+00:00",
+    "favorability": 4
+  },
+  {
+    "type": "offering",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-14T02:04:26.061000+00:00",
+    "favorability": 16,
+    "total_offerings": 100
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 823871940825317377,
+    "ts": "2026-07-14T02:06:26.172000+00:00",
+    "favorability": 8,
+    "consecutive_days": 1,
+    "fortune": "吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 823871940825317377,
+    "ts": "2026-07-14T02:06:29.189000+00:00",
+    "favorability": 10
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-14T03:17:12.684000+00:00",
+    "favorability": 35,
+    "consecutive_days": 2,
+    "fortune": "常識無視"
+  },
+  {
+    "type": "offering",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-14T03:17:28.392000+00:00",
+    "favorability": 47,
+    "total_offerings": 550
+  },
+  {
+    "type": "miracle",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-14T03:17:35.117000+00:00",
+    "favorability": 49
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 596317004143788054,
+    "ts": "2026-07-14T14:42:51.712000+00:00",
+    "favorability": 85,
+    "consecutive_days": 2,
+    "fortune": "吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 596317004143788054,
+    "ts": "2026-07-14T14:42:53.183000+00:00",
+    "favorability": 87
+  },
+  {
+    "type": "offering",
+    "user_id": 596317004143788054,
+    "ts": "2026-07-14T14:43:05.055000+00:00",
+    "favorability": 99,
+    "total_offerings": 200
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-15T01:28:14.837000+00:00",
+    "favorability": 57,
+    "consecutive_days": 3,
+    "fortune": "吉"
+  },
+  {
+    "type": "offering",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-15T01:28:33+00:00",
+    "favorability": 82,
+    "total_offerings": 5550
+  },
+  {
+    "type": "miracle",
+    "user_id": 837188914992119838,
+    "ts": "2026-07-15T01:28:42.334000+00:00",
+    "favorability": 84
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-15T01:30:31.439000+00:00",
+    "favorability": 24,
+    "consecutive_days": 2,
+    "fortune": "吉"
+  },
+  {
+    "type": "offering",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-15T01:30:35.380000+00:00",
+    "favorability": 36,
+    "total_offerings": 200
+  },
+  {
+    "type": "miracle",
+    "user_id": 302303627052056576,
+    "ts": "2026-07-15T01:30:38.920000+00:00",
+    "favorability": 86
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 823871940825317377,
+    "ts": "2026-07-15T01:35:24.983000+00:00",
+    "favorability": 25,
+    "consecutive_days": 2,
+    "fortune": "大吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 823871940825317377,
+    "ts": "2026-07-15T01:35:27.286000+00:00",
+    "favorability": 27
+  },
+  {
+    "type": "omikuji_draw",
+    "user_id": 308944739661512704,
+    "ts": "2026-07-15T02:36:26.663000+00:00",
+    "favorability": 13,
+    "consecutive_days": 2,
+    "fortune": "末吉"
+  },
+  {
+    "type": "miracle",
+    "user_id": 308944739661512704,
+    "ts": "2026-07-15T02:36:37.004000+00:00",
+    "favorability": 15
+  },
+  {
+    "type": "offering",
+    "user_id": 308944739661512704,
+    "ts": "2026-07-15T02:36:59.314000+00:00",
+    "favorability": 40,
+    "total_offerings": 1000
+  }
+]
