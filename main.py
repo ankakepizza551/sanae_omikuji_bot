@@ -1,6 +1,9 @@
 import asyncio
+import datetime
 import logging
 import os
+import sqlite3
+import tempfile
 import discord
 from discord.ext import commands
 import config
@@ -69,6 +72,39 @@ async def reset_cooldown(ctx, member: discord.Member = None):
         await ctx.send(f"✅ {target.mention} 殿の1日1回制限をリセットしました！再度お試しいただけます。")
     except Exception as e:
         await ctx.send(f"❌ リセット中にエラーが発生しました: {e}")
+
+@bot.command(name="db_backup")
+@commands.is_owner()
+async def db_backup(ctx):
+    """データベースのバックアップファイルをこのチャンネルに送信します (Botのオーナー専用)"""
+    def make_backup() -> str:
+        tmp_path = os.path.join(
+            tempfile.gettempdir(),
+            f"sanae_omikuji_backup_{datetime.datetime.now():%Y%m%d_%H%M%S}.db",
+        )
+        src = sqlite3.connect(config.DB_PATH)
+        try:
+            dst = sqlite3.connect(tmp_path)
+            try:
+                src.backup(dst)
+            finally:
+                dst.close()
+        finally:
+            src.close()
+        return tmp_path
+
+    await ctx.send("バックアップを作成中...")
+    tmp_path = None
+    try:
+        tmp_path = await asyncio.to_thread(make_backup)
+        await ctx.send(file=discord.File(tmp_path, filename="sanae_omikuji_backup.db"))
+        logger.info(f"db_backup: by user={ctx.author.id}")
+    except Exception as e:
+        await ctx.send(f"❌ バックアップ中にエラーが発生しました: {e}")
+        logger.error(f"db_backup失敗: {e}")
+    finally:
+        if tmp_path and os.path.exists(tmp_path):
+            os.remove(tmp_path)
 
 @bot.command(name="bot_status")
 async def bot_status(ctx):
