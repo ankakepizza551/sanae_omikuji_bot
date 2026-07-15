@@ -22,6 +22,8 @@
   2. ローカルDBに対して確認: python restore_omikuji.py --dry-run
   3. 問題なければ: python restore_omikuji.py
   4. 本番(Railway)には railway run python restore_omikuji.py で反映
+  --before YYYY-MM-DD を指定すると、その日付の前日23:59までのイベントのみを使って復元する
+  （例: --before 2026-07-14 は 7/13までのデータのみを使用）
 再実行しても、既に総計以上のデータがあるユーザーはスキップ・上書きしないため冪等。
 """
 import argparse
@@ -100,9 +102,13 @@ def build_user_states(events):
     return users, history_rows
 
 
-async def restore(dry_run: bool):
+async def restore(dry_run: bool, before: str | None):
     with open(EVENTS_PATH, encoding="utf-8") as f:
         events = json.load(f)
+
+    if before:
+        events = [e for e in events if e["ts"] < before]
+        print(f"フィルタ: {before} より前のイベントのみ使用（{len(events)}件）")
 
     users, history_rows = build_user_states(events)
 
@@ -177,5 +183,6 @@ async def restore(dry_run: bool):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true", help="DBに書き込まず内容だけ表示する")
+    parser.add_argument("--before", type=str, default=None, help="この日付(YYYY-MM-DD)より前のイベントのみ使用")
     args = parser.parse_args()
-    asyncio.run(restore(dry_run=args.dry_run))
+    asyncio.run(restore(dry_run=args.dry_run, before=args.before))
