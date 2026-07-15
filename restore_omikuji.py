@@ -102,7 +102,7 @@ def build_user_states(events):
     return users, history_rows
 
 
-async def restore(dry_run: bool, before: str | None):
+async def restore(dry_run: bool, before: str | None, overwrite: bool):
     with open(EVENTS_PATH, encoding="utf-8") as f:
         events = json.load(f)
 
@@ -127,7 +127,7 @@ async def restore(dry_run: bool, before: str | None):
 
     async with aiosqlite.connect(config.DB_PATH) as db:
         db.row_factory = aiosqlite.Row
-        inserted_users, skipped_users = 0, 0
+        inserted_users, updated_users, skipped_users = 0, 0, 0
 
         for uid, u in users.items():
             async with db.execute(
@@ -135,9 +135,28 @@ async def restore(dry_run: bool, before: str | None):
             ) as cursor:
                 existing = await cursor.fetchone()
 
-            if existing is not None:
+            if existing is not None and not overwrite:
                 print(f"  user_id={uid} は既にレコードが存在するためスキップ（上書きしません）")
                 skipped_users += 1
+                continue
+
+            if existing is not None:
+                await db.execute(
+                    """
+                    UPDATE users SET
+                        username = ?, favorability = ?, total_omikuji = ?,
+                        consecutive_days = ?, last_omikuji_date = ?, total_offerings = ?,
+                        last_offering_date = ?, last_miracle_date = ?
+                    WHERE user_id = ?
+                    """,
+                    (
+                        u["username"], u["favorability"], u["total_omikuji"],
+                        u["consecutive_days"], u["last_omikuji_date"], u["total_offerings"],
+                        u["last_offering_date"], u["last_miracle_date"], uid,
+                    ),
+                )
+                print(f"  user_id={uid} を上書き復元しました")
+                updated_users += 1
                 continue
 
             await db.execute(
@@ -157,6 +176,16 @@ async def restore(dry_run: bool, before: str | None):
             inserted_users += 1
         await db.commit()
 
+        if overwrite and before:
+            # カットオフ以降に紛れ込んだ履歴（前回のフィルタ無し復元などによるもの）を除去
+            uids = ",".join(str(uid) for uid in users)
+            cursor = await db.execute(
+                f"DELETE FROM omikuji_history WHERE user_id IN ({uids}) AND drawn_at >= ?",
+                (before,),
+            )
+            await db.commit()
+            print(f"  カットオフ以降の余分な履歴を {cursor.rowcount} 件削除しました")
+
         inserted_history, skipped_history = 0, 0
         for uid, fortune, ts in history_rows:
             async with db.execute(
@@ -175,7 +204,7 @@ async def restore(dry_run: bool, before: str | None):
         await db.commit()
 
     print(
-        f"\n完了: users 復元 {inserted_users} 件 / スキップ {skipped_users} 件、"
+        f"\n完了: users 新規 {inserted_users} 件 / 上書き {updated_users} 件 / スキップ {skipped_users} 件、"
         f" omikuji_history 復元 {inserted_history} 件 / スキップ {skipped_history} 件"
     )
 
@@ -184,5 +213,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true", help="DBに書き込まず内容だけ表示する")
     parser.add_argument("--before", type=str, default=None, help="この日付(YYYY-MM-DD)より前のイベントのみ使用")
+    parser.add_argument("--overwrite", action="store_true", help="既存のusersレコードも上書きする")
     args = parser.parse_args()
-    asyncio.run(restore(dry_run=args.dry_run, before=args.before))
+    asyncio.run(restore(dry_run=args.dry_run, before=args.before, overwrite=args.overwrite))
