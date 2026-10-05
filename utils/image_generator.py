@@ -1,6 +1,8 @@
+import io
 import os
 import requests
 from PIL import Image, ImageDraw, ImageFont
+from utils.database import get_today
 
 FONT_DIR = "assets/fonts"
 FONT_PATH = os.path.join(FONT_DIR, "SawarabiMincho-Regular.ttf")
@@ -64,8 +66,8 @@ def wrap_text(text, font, max_width, draw):
         lines.append(current_line)
     return lines
 
-def generate_omikuji_image(user_name: str, fortune: str, commentary: str, item: str, action: str, favorability: int) -> str:
-    """おみくじ画像を生成し、その一時ファイルパスを返す"""
+def generate_omikuji_image(user_name: str, fortune: str, commentary: str, item: str, action: str, favorability: int) -> io.BytesIO:
+    """おみくじ画像を生成し、PNGデータを返す"""
     # 画像サイズ: 480 x 760
     width = 480
     height = 760
@@ -98,7 +100,7 @@ def generate_omikuji_image(user_name: str, fortune: str, commentary: str, item: 
     font_bold = get_font(18)
     
     # 1. ヘッダー (守矢神社おみくじ)
-    header_text = "守谷神社 奇跡のおみくじ"
+    header_text = "守矢神社 奇跡のおみくじ"
     header_w = draw.textlength(header_text, font=font_title)
     draw.text(((width - header_w) // 2, 35), header_text, font=font_title, fill=sanae_green)
     
@@ -106,10 +108,15 @@ def generate_omikuji_image(user_name: str, fortune: str, commentary: str, item: 
     draw.line([30, 85, width - 30, 85], fill=gold_color, width=2)
     
     # 2. ユーザー名と日付
-    import datetime
-    today = datetime.date.today().strftime("%Y年%m月%d日")
+    today = get_today().strftime("%Y年%m月%d日")
     user_info = f"参拝者: {user_name} 殿   ({today})"
     user_info_w = draw.textlength(user_info, font=font_subtitle)
+    # 長い名前は枠内に収まるまで末尾を省略する
+    shown_name = user_name
+    while user_info_w > width - 60 and len(shown_name) > 1:
+        shown_name = shown_name[:-1]
+        user_info = f"参拝者: {shown_name}… 殿   ({today})"
+        user_info_w = draw.textlength(user_info, font=font_subtitle)
     draw.text(((width - user_info_w) // 2, 100), user_info, font=font_subtitle, fill=sanae_blue)
     
     # 3. 運勢表示エリア (大きな木札風)
@@ -194,8 +201,8 @@ def generate_omikuji_image(user_name: str, fortune: str, commentary: str, item: 
     footer_w = draw.textlength(footer_text, font=font_body)
     draw.text(((width - footer_w) // 2, height - 45), footer_text, font=font_body, fill=sanae_blue)
     
-    # 保存
-    os.makedirs("data/temp", exist_ok=True)
-    temp_path = os.path.join("data/temp", f"omikuji_{user_name}_{int(datetime.datetime.now().timestamp())}.png")
-    image.save(temp_path)
-    return temp_path
+    # PNGとしてメモリ上に書き出す
+    buffer = io.BytesIO()
+    image.save(buffer, format="PNG")
+    buffer.seek(0)
+    return buffer

@@ -1,8 +1,7 @@
 import discord
 from discord.ext import commands
-import datetime
 import random
-from utils.database import get_user, use_miracle_db
+from utils.database import get_user, use_miracle_db, get_today
 
 class MiracleCog(commands.Cog):
     def __init__(self, bot):
@@ -15,31 +14,30 @@ class MiracleCog(commands.Cog):
         user_name = ctx.author.display_name
         
         user = await get_user(user_id, user_name)
-        today_str = datetime.date.today().isoformat()
-        
+        today_str = get_today().isoformat()
+
         # クールダウンチェック (1日1回)
         if user["last_miracle_date"] == today_str:
-            embed = discord.Embed(
-                title="奇跡は安売りできません！",
-                description="奇跡の挑戦は1日1回までですよ！\nそんなに何度も奇跡を起こしては、それはもう『常識』になってしまいます！\nまた明日、奇跡を信じて挑戦しに来てくださいね！",
-                color=discord.Color.from_rgb(15, 125, 66)
-            )
-            await ctx.send(embed=embed)
+            await self._send_already_used(ctx)
             return
-            
-        # 成功率の計算: 基本20% + 好感度の0.05% (最大好感度1000で+50%、計70%)
+
+        # 成功率の計算: 基本20% + 好感度の0.05% (好感度1000で70%、1200以上で上限の80%)
         favorability = user["favorability"]
         base_rate = 0.20
         bonus_rate = favorability * 0.0005
         success_rate = min(0.80, base_rate + bonus_rate)  # 最大80%に制限
-        
+
         # 判定
         is_success = random.random() < success_rate
-        
+        gain = 50 if is_success else 2  # 失敗しても少しだけ上がる
+
+        # DB更新 (同時に複数回実行された場合、2回目以降は None が返る)
+        db_res = await use_miracle_db(user_id, user_name, gain)
+        if db_res is None:
+            await self._send_already_used(ctx)
+            return
+
         if is_success:
-            gain = 50
-            db_res = await use_miracle_db(user_id, user_name, gain)
-            
             # 成功メッセージのバリエーション
             success_messages = [
                 "「見てください！私の起こした奇跡です！風と雨があなたを祝福しています！」",
@@ -56,13 +54,9 @@ class MiracleCog(commands.Cog):
                             f"成功確率だった値: `{int(success_rate * 100)}%`",
                 color=discord.Color.from_rgb(212, 175, 55) # ゴールド枠
             )
-            # 成功時の演出として大きなキラキラ星をサムネイルに
-            embed.set_thumbnail(url="https://i.imgur.com/83pZp8X.png" if False else ctx.author.display_avatar.url)
-            
+            embed.set_thumbnail(url=ctx.author.display_avatar.url)
+
         else:
-            gain = 2  # 失敗しても少しだけ上がる
-            db_res = await use_miracle_db(user_id, user_name, gain)
-            
             # 失敗メッセージ
             fail_messages = [
                 "「うぅ……ごめんなさい、少し祈りが足りなかったみたいです……。次は絶対に成功させますからね！」",
@@ -81,6 +75,14 @@ class MiracleCog(commands.Cog):
             )
             embed.set_thumbnail(url=ctx.author.display_avatar.url)
             
+        await ctx.send(embed=embed)
+
+    async def _send_already_used(self, ctx):
+        embed = discord.Embed(
+            title="奇跡は安売りできません！",
+            description="奇跡の挑戦は1日1回までですよ！\nそんなに何度も奇跡を起こしては、それはもう『常識』になってしまいます！\nまた明日、奇跡を信じて挑戦しに来てくださいね！",
+            color=discord.Color.from_rgb(15, 125, 66)
+        )
         await ctx.send(embed=embed)
 
 async def setup(bot):

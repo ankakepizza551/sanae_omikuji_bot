@@ -9,7 +9,7 @@ from utils.image_generator import generate_omikuji_image
 def test():
     print("Testing image generator...")
     try:
-        path = generate_omikuji_image(
+        buffer = generate_omikuji_image(
             user_name="テストユーザー",
             fortune="奇跡 (Miracle)",
             commentary="常識にとらわれてはいけないのですね！今日あなたにはとてつもない奇跡が起こるでしょう。守矢の神々の加護があなたと共にあります！",
@@ -17,6 +17,10 @@ def test():
             action="近くの神社でお祈りをしてから、常識を捨て去る。",
             favorability=350
         )
+        os.makedirs("data/temp", exist_ok=True)
+        path = os.path.join("data/temp", "test_omikuji.png")
+        with open(path, "wb") as f:
+            f.write(buffer.getvalue())
         print(f"Success! Image generated at: {path}")
         # 画像が存在するか確認
         if os.path.exists(path):

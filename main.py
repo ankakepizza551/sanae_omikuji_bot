@@ -43,6 +43,17 @@ async def on_ready():
     activity = discord.Game(name="守矢神社でお守り配り | !omikuji")
     await bot.change_presence(status=discord.Status.online, activity=activity)
 
+@bot.event
+async def on_command_error(ctx, error):
+    # 存在しないコマンドや権限不足は反応しない
+    if isinstance(error, (commands.CommandNotFound, commands.CheckFailure)):
+        return
+    if isinstance(error, commands.UserInputError):
+        await ctx.send("❌ コマンドの入力内容が正しくないようです。もう一度確認してみてくださいね！")
+        return
+    logger.error(f"コマンド実行エラー {ctx.command}: {error}", exc_info=error)
+    await ctx.send("❌ 処理中にエラーが発生してしまいました……。時間をおいてもう一度お試しください。")
+
 @bot.command(name="sync")
 @commands.is_owner()
 async def sync(ctx):
@@ -62,13 +73,8 @@ async def reset_cooldown(ctx, member: discord.Member = None):
     """おみくじ・賽銭・奇跡のクールダウンをリセットします (Botのオーナー専用)"""
     target = member or ctx.author
     try:
-        import aiosqlite
-        async with aiosqlite.connect(config.DB_PATH) as db:
-            await db.execute(
-                "UPDATE users SET last_omikuji_date = NULL, last_offering_date = NULL, last_miracle_date = NULL WHERE user_id = ?",
-                (target.id,)
-            )
-            await db.commit()
+        from utils.database import reset_cooldown_db
+        await reset_cooldown_db(target.id)
         await ctx.send(f"✅ {target.mention} 殿の1日1回制限をリセットしました！再度お試しいただけます。")
     except Exception as e:
         await ctx.send(f"❌ リセット中にエラーが発生しました: {e}")

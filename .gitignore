@@ -4,6 +4,9 @@
 # SQLite Databases & Temp Images
 data/
 
+# Discord履歴から抽出した復元用データ (ユーザーIDや表示名を含む)
+history_events.json
+
 # Python Cache
 __pycache__/
 *.pyc

@@ -1,7 +1,9 @@
 import discord
 from discord.ext import commands
-import datetime
-from utils.database import get_user, add_offering
+from utils.database import get_user, add_offering, get_today
+
+# 1回のお賽銭の上限 (一万円札1枚ぶん)
+MAX_OFFERING = 10_000
 
 class ShrineCog(commands.Cog):
     def __init__(self, bot):
@@ -16,18 +18,17 @@ class ShrineCog(commands.Cog):
         if amount <= 0:
             await ctx.send("❌ お賽銭は1枚以上入れてくださいね！")
             return
-            
+
+        if amount > MAX_OFFERING:
+            await ctx.send(f"❌ お賽銭は一度に {MAX_OFFERING:,} 円までですよ！ お気持ちだけありがたくいただきますね！")
+            return
+
         user = await get_user(user_id, user_name)
-        today_str = datetime.date.today().isoformat()
-        
+        today_str = get_today().isoformat()
+
         # クールダウンチェック (1日1回)
         if user["last_offering_date"] == today_str:
-            embed = discord.Embed(
-                title="今日のお賽銭はすでに終わっています",
-                description="お賽銭は1日1回までですよ！\nあまり欲張ると神様のバチが当たるかもしれませんよ？\nまた明日お参りに来てくださいね！",
-                color=discord.Color.from_rgb(15, 125, 66)
-            )
-            await ctx.send(embed=embed)
+            await self._send_already_offered(ctx)
             return
             
         # 金額に応じた好感度の計算と早苗のメッセージ
@@ -58,18 +59,29 @@ class ShrineCog(commands.Cog):
                 f"さあ、常識にとらわれない奇跡を今すぐお祈りしましょう！」"
             )
             
-        # DB更新
+        # DB更新 (同時に複数回実行された場合、2回目以降は None が返る)
         db_res = await add_offering(user_id, user_name, amount, gain)
-        
+        if db_res is None:
+            await self._send_already_offered(ctx)
+            return
+
         embed = discord.Embed(
             title="⛩️ 守矢神社 拝殿 ⛩️",
-            description=f"{ctx.author.mention} さんがお賽銭箱に **{amount}** コインを投げ入れました。\n\n"
+            description=f"{ctx.author.mention} さんがお賽銭箱に **{amount}** 円を投げ入れました。\n\n"
                         f"**早苗:**\n{response}\n\n"
                         f"早苗からの信仰度: `+{gain}` (現在: `{db_res['new_favorability']}`)\n"
-                        f"これまでの累計お賽銭額: `{db_res['new_offerings']}` コイン",
+                        f"これまでの累計お賽銭額: `{db_res['new_offerings']}` 円",
             color=discord.Color.from_rgb(15, 125, 66)
         )
         embed.set_thumbnail(url=ctx.author.display_avatar.url)
+        await ctx.send(embed=embed)
+
+    async def _send_already_offered(self, ctx):
+        embed = discord.Embed(
+            title="今日のお賽銭はすでに終わっています",
+            description="お賽銭は1日1回までですよ！\nあまり欲張ると神様のバチが当たるかもしれませんよ？\nまた明日お参りに来てくださいね！",
+            color=discord.Color.from_rgb(15, 125, 66)
+        )
         await ctx.send(embed=embed)
 
 async def setup(bot):

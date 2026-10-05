@@ -67,7 +67,7 @@ class ProfileCog(commands.Cog):
         embed.add_field(
             name="参拝記録",
             value=f"**累計おみくじ:** `{user['total_omikuji']}` 回\n"
-                  f"**累計お賽銭額:** `{user['total_offerings']}` コイン",
+                  f"**累計お賽銭額:** `{user['total_offerings']}` 円",
             inline=True
         )
         

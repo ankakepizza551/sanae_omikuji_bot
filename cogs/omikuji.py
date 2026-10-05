@@ -1,10 +1,12 @@
+import asyncio
 import discord
 from discord.ext import commands
-import datetime
+import logging
 import random
-import os
-from utils.database import get_user, draw_omikuji_db
+from utils.database import get_user, draw_omikuji_db, get_today
 from utils.image_generator import generate_omikuji_image
+
+logger = logging.getLogger("SanaeOmikujiBot")
 
 # おみくじデータの定義
 FORTUNES = [
@@ -94,52 +96,33 @@ class OmikujiCog(commands.Cog):
         
         # ユーザー情報をDBから取得
         user = await get_user(user_id, user_name)
-        today_str = datetime.date.today().isoformat()
-        
+        today_str = get_today().isoformat()
+
         # クールダウンチェック (1日1回)
         if user["last_omikuji_date"] == today_str:
-            embed = discord.Embed(
-                title="おみくじは1日1回までですよ！",
-                description=f"おみくじはすでに今日引かれています。\nまた明日引きに来てくださいね！\n\n**現在の連続参拝記録:** `{user['consecutive_days']}` 日連続",
-                color=discord.Color.from_rgb(15, 125, 66)
-            )
-            embed.set_thumbnail(url=ctx.author.display_avatar.url)
-            await ctx.send(embed=embed)
+            await self._send_already_drawn(ctx, user["consecutive_days"])
             return
 
         # 応答中であることをDiscordに伝える (画像生成に時間がかかる場合があるため)
         await ctx.defer()
-        
+
         # 重み付き抽選
         fortunes_choices = [f for f in FORTUNES]
         weights = [f["weight"] for f in FORTUNES]
         chosen = random.choices(fortunes_choices, weights=weights)[0]
-        
-        # DBを更新
+
+        # DBを更新 (同時に複数回実行された場合、2回目以降は None が返る)
         db_res = await draw_omikuji_db(
             user_id=user_id,
             username=user_name,
             fortune=chosen["fortune"],
             favorability_gain=chosen["gain"]
         )
-        
-        # 画像生成
-        try:
-            image_path = generate_omikuji_image(
-                user_name=user_name,
-                fortune=chosen["fortune"],
-                commentary=chosen["commentary"],
-                item=chosen["item"],
-                action=chosen["action"],
-                favorability=db_res["new_favorability"]
-            )
-        except Exception as e:
-            await ctx.send(f"❌ おみくじの画像生成中にエラーが発生しました: {e}")
+        if db_res is None:
+            user = await get_user(user_id, user_name)
+            await self._send_already_drawn(ctx, user["consecutive_days"])
             return
-            
-        # 送信用のFileオブジェクト作成
-        discord_file = discord.File(image_path, filename="omikuji.png")
-        
+
         # メッセージの作成
         embed = discord.Embed(
             title="✨ 守矢神社おみくじ 結果 ✨",
@@ -148,16 +131,38 @@ class OmikujiCog(commands.Cog):
                         f"連続参拝日数: `{db_res['consecutive_days']}` 日連続",
             color=discord.Color.from_rgb(15, 125, 66)
         )
-        embed.set_image(url="attachment://omikuji.png")
-        
-        await ctx.send(file=discord_file, embed=embed)
-        
-        # 一時ファイルの削除 (Discord送信後は削除して良い)
+
+        # 画像生成 (Pillowの処理でBot全体が止まらないよう別スレッドで実行)
         try:
-            if os.path.exists(image_path):
-                os.remove(image_path)
+            image_data = await asyncio.to_thread(
+                generate_omikuji_image,
+                user_name=user_name,
+                fortune=chosen["fortune"],
+                commentary=chosen["commentary"],
+                item=chosen["item"],
+                action=chosen["action"],
+                favorability=db_res["new_favorability"]
+            )
         except Exception as e:
-            print(f"一時ファイルの削除失敗: {e}")
+            # すでに今日の分は引いた扱いなので、画像なしでも結果は必ず伝える
+            logger.error(f"おみくじ画像生成失敗 user={user_id}: {e}")
+            embed.add_field(name="早苗の託宣", value=chosen["commentary"], inline=False)
+            embed.add_field(name="ラッキーアイテム", value=chosen["item"], inline=True)
+            embed.add_field(name="ラッキーアクション", value=chosen["action"], inline=True)
+            await ctx.send(embed=embed)
+            return
+
+        embed.set_image(url="attachment://omikuji.png")
+        await ctx.send(file=discord.File(image_data, filename="omikuji.png"), embed=embed)
+
+    async def _send_already_drawn(self, ctx, consecutive_days: int):
+        embed = discord.Embed(
+            title="おみくじは1日1回までですよ！",
+            description=f"おみくじはすでに今日引かれています。\nまた明日引きに来てくださいね！\n\n**現在の連続参拝記録:** `{consecutive_days}` 日連続",
+            color=discord.Color.from_rgb(15, 125, 66)
+        )
+        embed.set_thumbnail(url=ctx.author.display_avatar.url)
+        await ctx.send(embed=embed)
 
 async def setup(bot):
     await bot.add_cog(OmikujiCog(bot))
